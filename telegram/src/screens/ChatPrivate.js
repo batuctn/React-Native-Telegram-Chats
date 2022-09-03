@@ -63,9 +63,9 @@ const ChatPrivate = ({route}) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [messages]);
   // yukarda useeffect her context değiştiğinde eski mesajı contexte kaydetmele çalıştım messages contexini deep'ine vermeme rağmen eslint hataasına veriyodu
-  let tarih = new Date();
-  var saat = tarih.getHours() + 3;
-  var dakika = tarih.getMinutes();
+  let date = new Date();
+  var hour = date.getHours() + 3;
+  var minute = date.getMinutes();
 
   return (
     <ImageBackground
@@ -86,7 +86,7 @@ const ChatPrivate = ({route}) => {
                     {item}
                   </Text>
                   <View style={styles.datetime}>
-                    <Text>{`${saat}:${dakika}`}</Text>
+                    <Text>{`${hour}:${minute}`}</Text>
                   </View>
                 </View>
               );
