@@ -18,14 +18,13 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useNavigation} from '@react-navigation/native';
 import {UserContext} from '../context/user';
 import {MessagesContext} from '../context/messages';
-import {ChatUserContext} from '../context/chatUser';
 
 const BottomNav = createBottomTabNavigator();
 const BottomNavigaiton = ({route}) => {
   const {navigate} = useNavigation();
   const {setUser} = useContext(UserContext);
   const [chat, setChat] = useState([]);
-  const {setChatUser} = useContext(ChatUserContext);
+  // const {setChatUser} = useContext(ChatUserContext);
   const {messages} = useContext(MessagesContext);
   //giriş yaptığında kullanıcı yoksa logine yönlendirecek.
   const getUserStorageData = useCallback(async () => {
@@ -61,7 +60,6 @@ const BottomNavigaiton = ({route}) => {
               <TouchableOpacity
                 onPress={() => {
                   navigate('Chat');
-                  setChatUser(item);
                 }}>
                 <ScrollView>
                   <View style={styles.messagesView}>
