@@ -23,7 +23,7 @@
 
 ## Live Demo (available)
 
-[Live Demo Link](https://gifyu.com/image/SwnNo](https://s4.gifyu.com/images/Android-Emulator---Pixel_3a_API_29_5554-2022-09-03-06-01-48.gif) <br/>
+[Live Demo Link](https://s4.gifyu.com/images/Android-Emulator---Pixel_3a_API_29_5554-2022-09-03-06-01-48.gif) <br/>
 Alternatife Link [Link](https://i.im.ge/2022/09/03/ObuDCa.Android-Emulator-Pixel-3a-API-29-5554-2022-09-03-06-01-48.gif)
 
 
